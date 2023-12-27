@@ -1,6 +1,7 @@
 name: Lint Code
-on: [push]
-  pull_request:
+
+on:
+  push:
     branches: [main]
 
 jobs:
@@ -20,4 +21,3 @@ jobs:
 
       - name: Run Linter
         run: npm run lint
-        
